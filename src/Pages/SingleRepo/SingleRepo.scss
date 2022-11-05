@@ -1,0 +1,53 @@
+@import '../../reources';
+.singleRepo {
+  background-color: #090e16;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  .main {
+    padding: 0 100px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 1650px;
+    @include mobile-1024 {
+      padding: 0 50px;
+      padding-top: 30px;
+    }
+    @include mobile-800 {
+      padding: 0 20px;
+      padding-top: 30px;
+    }
+    .repo_body {
+      width: 100%;
+      padding-top: 50px;
+      .top {
+        text-align: center;
+        h1 {
+          font-size: 50px;
+          color: #fff;
+          @include mobile-600 {
+            font-size: 30px;
+          }
+        }
+      }
+      .table {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        table {
+          width: 100%;
+          max-width: 800px;
+          text-align: left;
+          th,
+          td {
+            color: #ffffff80;
+            padding: 20px;
+            border: 1px solid rgba(123, 74, 226, 0.5);
+            margin-right: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

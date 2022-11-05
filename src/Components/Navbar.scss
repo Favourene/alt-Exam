@@ -1,0 +1,59 @@
+@import '../reources';
+
+.navbar {
+  background: rgba(123, 74, 226, 0.024);
+  border-radius: 16px;
+  width: 100%;
+  padding: 20px 0;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include mobile-600 {
+      padding-bottom: 30px;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    a {
+      text-decoration: none;
+      @include mobile-600 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+    }
+    li {
+      list-style: none;
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+      opacity: 0.5;
+      padding-right: 30px;
+      cursor: pointer;
+      &:hover {
+        color: #7b4ae2;
+      }
+      &.active {
+        color: #7b4ae2;
+      }
+      @include mobile-600 {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .bars {
+    padding: 0 20px;
+    display: none;
+    @include mobile-600 {
+      display: block;
+    }
+    svg {
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+}
